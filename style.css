@@ -169,21 +169,6 @@ nav .appointment a i {
     margin-right: 10px;
 }
 
-.experience-icon {
-    background-image: url('experience-icon.png');
-}
-
-.quality-icon {
-    background-image: url('quality-icon.png');
-}
-
-.consultation-icon {
-    background-image: url('consultation-icon.png');
-}
-
-.support-icon {
-    background-image: url('support-icon.png');
-}
 
 .features-text strong {
     display: block;
