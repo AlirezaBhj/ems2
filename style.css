@@ -194,48 +194,84 @@ nav .appointment a i {
     object-fit: cover;
 }
 
+/* بخش Doctors Section */
 .doctors-section {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.doctors-section h2 {
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    color: #333;
-}
-
-.doctors-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px; /* فاصله بین کارت‌ها */
 }
 
 .doctor-card {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
     width: 250px;
-    text-align: center;
+    background-color: #EFF5FF ;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    border-radius:10px ;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s;
 }
 
 .doctor-card img {
     width: 100%;
     height: auto;
+    transition: transform 0.5s;
 }
 
-.doctor-card h3 {
-    margin: 15px 0 5px 0;
-    font-size: 1.5em;
-    color: #333;
+.doctor-info {
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s;
 }
 
-.doctor-card p {
-    margin-bottom: 15px;
-    color: #666;
+.social-icons {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    transition: bottom 0.5s;
 }
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    color: #0056d2; 
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #0056d2; 
+    color: white;
+}
+
+.doctor-card:hover .social-icons {
+    bottom: 20px; 
+}
+
+.doctor-card:hover img, 
+.doctor-card:hover .doctor-info {
+    transform: translateY(-20px); 
+}
+
+.doctor-card:hover {
+    transform: translateY(-10px);
+}
+
 
 .footer {
     background-color: #1b2c51;
