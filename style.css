@@ -194,13 +194,13 @@ nav .appointment a i {
     object-fit: cover;
 }
 
-/* بخش Doctors Section */
+
 .doctors-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px; /* فاصله بین کارت‌ها */
+    gap: 20px;
 }
 
 .doctor-card {
